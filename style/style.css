@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bellota:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bakbak+One&family=Bellota:wght@300&family=Passion+One:wght@700&display=swap');
+
+:root{
+    --font0: Verdana, Geneva, Tahoma, sans-serif;
+    --font1: "Bellota", system-ui;
+    --font2: "Passion One", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: gray;
+    font-family: var(--font1);
+    
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+   padding-top: 40px;
+   font-variant: small-caps;
+   font-family: var(--font2);
+   font-weight: 700;
+   font-style: normal; 
+   font-size: 10vw;
+}
+
+header > p{
+    font-family: var(--font0);
+    padding-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font1);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.noimage{
+    background-color: white;
+}
+
+
+section.image{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.39);
+}
+
+section.image > p{
+    display: inline-block;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.512);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.438);
+
+}
+
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+
+}
+ 
+section#img2{
+    background-image: url(../imagens/background002.jpg);
+} 
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p{
+    font-size: 0.7em;
+    font-family: var(--font0);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
